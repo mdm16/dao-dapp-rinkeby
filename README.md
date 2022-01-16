@@ -1,3 +1,8 @@
+Fictional DAO dApp deployed to the rinkeby test network that lets people connect their wallet, get an NFT, see a DAO Dashboard where they can see other members + actually vote on proposals that are executed directly by the UNITY governance contract.
+
+Created custom ERC-20 token called UNITY Created ERC-1155 membership NFT people can mint to join the DAO Created governance contract and treasury contract.
+
+
 # buildspace x thirdweb - Build your own DAO with just Javascript
 
 ### **Welcome 👋**
