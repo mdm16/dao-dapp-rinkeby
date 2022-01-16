@@ -1,7 +1,7 @@
 import sdk from "./1-initialize-sdk.js";
 
 // In order to deploy the new contract we need our old friend the app module again.
-const app = sdk.getAppModule("0x4Dd804140D1bC1da5556FB24BA3597FF41eC3EE2");
+const app = sdk.getAppModule(process.env.APPMODULE_ADDRESS);
 
 (async () => {
   try {

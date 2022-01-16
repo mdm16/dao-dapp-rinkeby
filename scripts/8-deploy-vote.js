@@ -2,7 +2,7 @@ import sdk from "./1-initialize-sdk.js";
 
 // Grab the app module address.
 const appModule = sdk.getAppModule(
-  "0x4Dd804140D1bC1da5556FB24BA3597FF41eC3EE2",
+  process.env.APPMODULE_ADDRESS,
 );
 
 (async () => {
@@ -12,7 +12,7 @@ const appModule = sdk.getAppModule(
       name: "AccountabilityDAO's Proposals",
 
       // This is the location of our governance token, our ERC-20 contract!
-      votingTokenAddress: "0x5c18A193a394962133cf948dF463e86D4C330543",
+      votingTokenAddress: process.env.ERC20_CONTRACT,
 
       // After a proposal is created, when can members start voting?
       // For now, we set this to immediately.

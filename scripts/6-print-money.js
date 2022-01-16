@@ -3,7 +3,7 @@ import sdk from "./1-initialize-sdk.js";
 
 // This is the address of our ERC-20 contract printed out in the step before.
 const tokenModule = sdk.getTokenModule(
-  "0x5c18A193a394962133cf948dF463e86D4C330543",
+  process.env.ERC20_CONTRACT,
 );
 
 (async () => {
